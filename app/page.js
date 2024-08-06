@@ -111,3 +111,24 @@ export default function Home() {
     </main>
   );
 }
+import Link from 'next/link';
+
+export default function HomePage() {
+  return (
+    <main className="p-4">
+      <h1 className="text-2xl font-bold mb-4">CPRG 306: Web Development 2 - Assignments</h1>
+      <ul className="list-none p-0">
+        <li className="mb-2">
+          <Link href="/week-2">
+            <a className="text-blue-500 hover:underline">Week 2 Assignment</a>
+          </Link>
+        </li>
+        <li className="mb-2">
+          <Link href="https://github.com/EricChien1126/cprg306-assignments">
+            <a className="text-blue-500 hover:underline">Week 3 Assignment</a>
+          </Link>
+        </li>
+      </ul>
+    </main>
+  );
+}
